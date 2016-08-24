@@ -1,0 +1,10 @@
+t=0:0.001:75;
+n=[10];d=[10 1];
+c=step(n,d,t);
+plot(t,c);
+xlabel('Time');
+ylabel('Amplitude');
+title('Unit Step Response of First Order System');
+grid on ; hold on;
+n1=[1];d1=[15 1];c2=step(n1,d1,t);
+plot(t,c2);

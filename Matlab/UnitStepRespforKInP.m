@@ -1,0 +1,13 @@
+t=0:0.001:10;
+n1=[300 30];
+d1=[1 0];
+n2=[1];
+d2=[1 10 20];
+n=conv(n1,n2);
+d=conv(d1,d2);
+[nx dx]=cloop(n,d);
+c=step(nx,dx,t);
+plot(t,c);
+xlabel('Time');
+ylabel('Amplitude');
+title('Unit Step Response');
