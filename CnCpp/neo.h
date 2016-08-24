@@ -1,5 +1,5 @@
-#ifndef ASH_H
-#define ASH_H
+#ifndef NEO_H
+#define NEO_H
 
 #include <iostream>
 #include<conio.h>
