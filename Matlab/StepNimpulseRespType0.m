@@ -1,0 +1,14 @@
+t=0:0.001:3;
+n=[1];d=[1 10];
+c=impulse(n,d,t);
+cs=step(n,d,t);
+subplot(1,2,1);
+plot(t,c);
+xlabel('Time');
+ylabel('Amplitude');
+title('Impulse Response of Type-0 System');
+subplot(1,2,2);
+plot(t,cs);
+xlabel('Time');
+ylabel('Amplitude');
+title('Step Response of Type-0 System');
